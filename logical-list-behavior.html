@@ -97,6 +97,7 @@ Polymer.LogicalListBehavior = {
 		if(!this.listDataAll) return;
 
 		if(!this.search || this.search.trim().length < 1) {
+			this.listData = [];
 			this.listData = this.listDataAll;
 			return;
 		}
